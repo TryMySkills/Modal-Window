@@ -19,7 +19,7 @@ closeModal.addEventListener('click', addHidden);
 overlay.addEventListener('click', addHidden);
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     addHidden();
   }
 });
